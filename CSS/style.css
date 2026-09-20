@@ -159,6 +159,79 @@ a {
   z-index: 1;
 }
  
+/* ---------- About Me Section ---------- */
+.about {
+  padding: 80px 30px;
+  background-color: #ffffff;
+}
+ 
+.about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ 
+.section-title {
+  font-size: 34px;
+  color: #16302d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+.about-bio {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.7;
+}
+ 
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+ 
+.about-box {
+  background-color: #eaf8f7;
+  border: 1px solid #d8eeec;
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1 1 300px;
+  max-width: 340px;
+}
+ 
+.about-box h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  color: #0e7c78;
+  margin-bottom: 15px;
+}
+ 
+.about-box p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+ 
+.about-box ul {
+  list-style: none;
+}
+ 
+.about-box ul li {
+  font-size: 15px;
+  line-height: 1.6;
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 10px;
+}
+ 
+.about-box ul li::before {
+  content: "•";
+  color: #0e7c78;
+  position: absolute;
+  left: 0;
+}
+ 
 /* ---------- Responsive: stack everything on smaller screens ---------- */
 @media (max-width: 800px) {
   .hero-inner {
@@ -176,5 +249,9 @@ a {
  
   .main-nav {
     justify-content: center;
+  }
+ 
+  .about-box {
+    max-width: 100%;
   }
 }
