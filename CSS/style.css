@@ -232,6 +232,60 @@ a {
   left: 0;
 }
  
+/* ---------- Skills Section ---------- */
+.skills {
+  padding: 80px 30px;
+  background-color: #eaf8f7;
+}
+ 
+.skills-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ 
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+ 
+/* This one card style is reused for all six skills */
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1 1 220px;
+  max-width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+ 
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+ 
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #0e7c78;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+}
+ 
+.skill-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 19px;
+  color: #16302d;
+  margin-bottom: 10px;
+}
+ 
+.skill-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+ 
 /* ---------- Responsive: stack everything on smaller screens ---------- */
 @media (max-width: 800px) {
   .hero-inner {
@@ -252,6 +306,10 @@ a {
   }
  
   .about-box {
+    max-width: 100%;
+  }
+ 
+  .skill-card {
     max-width: 100%;
   }
 }
