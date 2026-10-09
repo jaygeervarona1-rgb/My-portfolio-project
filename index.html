@@ -18,6 +18,7 @@
       <nav class="main-nav">
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
       </nav>
  
       
@@ -70,46 +71,51 @@
         </p>
  
         <div class="about-grid">
- 
-          <!-- article is used for each card because it's a self-contained piece of content -->
-          <article class="about-box">
-            <h3>Hobbies &amp; Interests</h3>
-            <ul>
-              <li>Playing online games</li>
-              <li>Running</li>
-              <li>Fixing and modifying motorcycles</li>
-            </ul>
-          </article>
- 
-          <article class="about-box">
-            <h3>My Goal</h3>
-            <p>
-              My goal is to graduate on time, find a job, and eventually give back
-              to my parents for all the sacrifices and support they have given me.
-            </p>
-          </article>
- 
-          <article class="about-box">
-            <h3>Academic &amp; Personal Background</h3>
-            <ul>
-              <li>
-                Was a member of the Caraga State University Gaming and Multiplayer
-                Esports Enthusiasts (CSU-GaMEE), competing under the Balanghai Esports
-                Team's Call of Duty Mobile squad, HAAD, during the 2024–2025 academic
-                year.
-              </li>
-              <li>
-                Part of the Growmate team, which won Champion in the Agriculture and
-                Aqua category at Pagsanyog 2026: Startup Showcase and Pitching
-                Competition, held on May 21, 2026.
-              </li>
-              <li>
-                Named to the Dean's List for the 2nd Semester of Academic Year
-                2025–2026.
-              </li>
-            </ul>
-          </article>
- 
+
+          <!-- Left column: My Goal sa ibabaw, Hobbies & Interests sa ubos -->
+          <div class="about-column-left">
+            <article class="about-box">
+              <h3>My Goal</h3>
+              <p>
+                My goal is to graduate on time, find a job, and eventually give back
+                to my parents for all the sacrifices and support they have given me.
+              </p>
+            </article>
+
+            <article class="about-box">
+              <h3>Hobbies &amp; Interests</h3>
+              <ul>
+                <li>Playing online games</li>
+                <li>Running</li>
+                <li>Fixing and modifying motorcycles</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Right column: Academic & Personal Background tapad nila -->
+          <div class="about-column-right">
+            <article class="about-box about-box-academic">
+              <h3>Academic &amp; Personal Background</h3>
+              <ul>
+                <li>
+                  Was a member of the Caraga State University Gaming and Multiplayer
+                  Esports Enthusiasts (CSU-GaMEE), competing under the Balanghai Esports
+                  Team's Call of Duty Mobile squad, HAAD, during the 2024–2025 academic
+                  year.
+                </li>
+                <li>
+                  Part of the Growmate team, which won Champion in the Agriculture and
+                  Aqua category at Pagsanyog 2026: Startup Showcase and Pitching
+                  Competition, held on May 21, 2026.
+                </li>
+                <li>
+                  Named to the Dean's List for the 2nd Semester of Academic Year
+                  2025–2026.
+                </li>
+              </ul>
+            </article>
+          </div>
+
         </div>
  
       </div>
@@ -157,7 +163,7 @@
           <article class="skill-card">
             <div class="skill-icon"></div>
             <h3>Adaptable</h3>
-            <p>Staying flexible and adjusting well to new situations and teams.</p>
+            <p>Staying flexible and adjusting weall to new situations and teams.</p>
           </article>
  
         </div>
@@ -165,7 +171,84 @@
       </div>
     </section>
  
-  </main>
+      <!-- Activity 4: Show Your Projects Section -->
+    <section id="projects" class="projects">
+      <div class="projects-inner">
+
+        <h2 class="section-title">My Projects</h2>
+        <p class="projects-subtitle">A showcase of the projects and initiatives I've worked on.</p>
+
+        <div class="projects-grid">
+
+          <!-- Reusable Project Card 1 -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img src="Image/GWM.jpg" alt="Growmate Agri-Aqua Platform preview" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Growmate</h3>
+              <p class="project-description">
+                An innovative platform for agriculture and aquaculture monitoring and management. Awarded Champion in Pagsanyog 2026 Startup Competition.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">React.js</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reusable Project Card 2 -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img src="Image/SIMS.png" alt="Sheems Steel Construction Supply Sales and Inventory Management System preview" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sheems Steel Construction Supply Sales and Inventory Management System</h3>
+              <p class="project-description">
+                A web-based capstone project developed at Caraga State University (CSU) to improve inventory management, sales recording, and business operations at SHEMS Steel in Butuan City.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Vue.js</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reusable Project Card 3 -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <img src="Image/logo.jpg" alt="Surovia preview" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Surovia</h3>
+              <p class="project-description">
+                Surovia is an AI - powered travel app that creates smart, budget-friendly tour packages, recommends the best local food, and suggest safe, affordable transport - perfect for solo travelers and large groups exploring Caraga.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Vue.js</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+</main>
  
 </body>
 </html>
