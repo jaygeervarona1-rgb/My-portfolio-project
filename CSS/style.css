@@ -17,7 +17,7 @@ h1, h2 {
 a {
   text-decoration: none;
 }
-
+/* act6 */
 html {
   scroll-behavior: smooth;
 }
@@ -26,6 +26,7 @@ html {
 .site-header {
   background-color: #ffffff;
   padding: 20px 0;
+  /* act6 */
   position: sticky;
   top: 0;
   z-index: 10;
@@ -501,14 +502,14 @@ main > section {
   background-color: #f4fbfa;
 }
 
-/* ---------- Contact Section ---------- */
+/* ---------- Activity 6&7: Contact Section ---------- */
 .contact {
   padding: 80px 30px;
   background-color: #ffffff;
 }
 
 .contact-inner {
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto;
   text-align: center;
 }
@@ -516,6 +517,83 @@ main > section {
 .contact-inner p {
   font-size: 16px;
   line-height: 1.7;
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.form-field {
+  display: grid;
+  gap: 8px;
+}
+
+.form-field label {
+  color: #16302d;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #b8d8d5;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #16302d;
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* .form-field input:hover,
+.form-field textarea:hover {
+  border-color: #0e7c78;
+} */
+/* 
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #0e7c78;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(14, 124, 120, 0.18);
+} */
+
+.contact-submit {
+  justify-self: start;
+  padding: 13px 26px;
+  border: 2px solid #0e7c78;
+  border-radius: 6px;
+  background-color: #0e7c78;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+  border-color: #0b6360;
+  background-color: #0b6360;
+  transform: translateY(-2px);
+}
+
+.contact-submit:focus-visible {
+  outline: 2px solid #16302d;
+  outline-offset: 3px;
+}
+
+.form-note {
+  color: #55666d;
+  font-size: 13px;
 }
 
 .contact-details {

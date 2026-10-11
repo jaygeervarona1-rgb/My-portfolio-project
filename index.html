@@ -295,6 +295,30 @@
           Thanks for visiting my portfolio. I’m always happy to connect about
           web development, projects, and new opportunities.
         </p>
+        <form class="contact-form" action="mailto:jaygeervarona1@gmail.com" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="Name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="Email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="Subject" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="Message" rows="6" required></textarea>
+          </div>
+
+          <button class="contact-submit" type="submit">Send Message</button>
+          <p class="form-note">Submitting opens your default email app to send the message.</p>
+        </form>
       </div>
     </section>
 
