@@ -650,3 +650,119 @@ main > section {
   }
 
 }
+
+/* ---------- ACTIVITY 8: Responsive Design ---------- */
+img {
+  max-width: 100%;
+}
+
+.hero-text,
+.hero-photo,
+.about-column-left,
+.about-column-right,
+.skill-card,
+.project-card {
+  min-width: 0;
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .about,
+  .skills,
+  .projects,
+  .education-experience,
+  .contact {
+    padding: 64px 24px;
+  }
+
+  .hero-inner {
+    gap: 32px;
+  }
+
+  .hero-photo,
+  .circle-behind-photo {
+    width: 280px;
+    height: 280px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .nav-wrapper {
+    padding: 0 16px;
+  }
+
+  .main-nav {
+    width: 100%;
+    gap: 4px 6px;
+  }
+
+  .nav-link {
+    padding: 7px 8px;
+    font-size: 14px;
+  }
+
+  main > section {
+    scroll-margin-top: 120px;
+  }
+
+  .hero,
+  .about,
+  .skills,
+  .projects,
+  .education-experience,
+  .contact {
+    padding: 48px 18px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(30px, 8vw, 38px);
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .hero-photo,
+  .circle-behind-photo {
+    width: min(260px, 75vw);
+    height: min(260px, 75vw);
+  }
+
+  .section-title {
+    font-size: clamp(27px, 7vw, 32px);
+  }
+
+  .about-box,
+  .skill-card,
+  .project-content {
+    padding: 22px;
+  }
+
+  .table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .education-table {
+    min-width: 600px;
+  }
+
+  .education-table th,
+  .education-table td {
+    padding: 10px;
+  }
+
+  .contact-submit {
+    justify-self: stretch;
+    width: 100%;
+  }
+}
