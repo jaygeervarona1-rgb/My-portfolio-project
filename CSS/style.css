@@ -615,7 +615,34 @@ main > section {
   text-decoration: underline;
 }
 
-/* ---------- Responsive: stack everything on smaller screens ---------- */
+/* ACTIVITY 9: Footer Design */
+.site-footer {
+  background-color: #16302d;
+  color: #ffffff;
+  padding: 24px 30px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* ---------- ACTIVITY 8: Responsive Design ---------- */
 @media (max-width: 800px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -764,5 +791,10 @@ img {
   .contact-submit {
     justify-self: stretch;
     width: 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
   }
 }
